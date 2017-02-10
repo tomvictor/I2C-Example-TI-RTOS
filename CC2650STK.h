@@ -69,10 +69,10 @@ extern const PIN_Config BoardGpioInitTable[];
  */
 
 /* Discrete outputs */
-//#define Board_STK_LED1              IOID_6 //launchpad
-//#define Board_STK_LED2              IOID_7 //launchpad
-#define Board_STK_LED1              IOID_10
-#define Board_STK_LED2              IOID_15
+#define Board_STK_LED1              IOID_6 //launchpad
+#define Board_STK_LED2              IOID_7 //launchpad
+//#define Board_STK_LED1              IOID_10   // stk
+//#define Board_STK_LED2              IOID_15   // stk
 #define Board_BUZZER                IOID_21
 #define Board_LED_ON                1
 #define Board_LED_OFF               0
@@ -80,8 +80,8 @@ extern const PIN_Config BoardGpioInitTable[];
 #define Board_BUZZER_OFF            0
 
 /* Discrete inputs */
-#define Board_KEY_LEFT              IOID_13
-#define Board_KEY_RIGHT             IOID_14
+#define Board_KEY_LEFT              IOID_13 //13: lp
+#define Board_KEY_RIGHT             IOID_14 //14:Lp
 #define Board_RELAY                 IOID_3
 
 /* Sensor outputs */
@@ -90,7 +90,7 @@ extern const PIN_Config BoardGpioInitTable[];
 
 /* I2C */
 #define Board_I2C0_SDA0             IOID_5 //5
-#define Board_I2C0_SCL0             IOID_6 //4 : launchpad, 6 : stk
+#define Board_I2C0_SCL0             IOID_4 //4 : launchpad, 6 : stk
 #define Board_I2C0_SDA1             IOID_8
 #define Board_I2C0_SCL1             IOID_9
 
